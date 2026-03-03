@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Numeros</title>
+</head>
+
+<body>
+    <div>
+        <h1>Conversión de sistemas de numeración</h1>
+        <div>
+            <form id="formulario">
+                <label for="tipoNumeracion">Selecciona el sistema de numeración a ingresar</label>
+                <select name="tipoNumeracion" id="tipoNumeracion">
+                    <option value="10">Decimal</option>
+                    <option value="2">Binario</option>
+                    <option value="8">Octal</option>
+                    <option value="16">Hexadecimal</option>
+                </select>
+                <input type="text" id="numero" placeholder="Número a convetir">
+                <div id="mensajeError"></div> <!--Div para mostrar el error de validación-->
+                <button type="submit">Convertir</button>
+                <label for="resultado">Resultado</label>
+                <label for="resDecimal">Decimal</label>
+                <input type="text" id="resDecimal" readonly>
+                <label for="resBinario">Binario</label>
+                <input type="text" id="resBinario" readonly>
+                <label for="resOctal">Octal</label>
+                <input type="text" id="resOctal" readonly>
+                <label for="resHexadecimal">Hexadecimal</label>
+                <input type="text" id="resHexadecimal" readonly>
+
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
