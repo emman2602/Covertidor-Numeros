@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convertidor de Numeros</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
+    <header class="hero">
         <h1>Conversión de sistemas de numeración</h1>
-        <div>
-            <form id="formulario">
+    </header>
+    <main class="container">
+        <section class="card">
+            <form id="formulario" class="form">
                 <label for="tipoNumeracion">Selecciona el sistema de numeración a ingresar</label>
                 <select name="tipoNumeracion" id="tipoNumeracion">
                     <option value="10">Decimal</option>
@@ -19,23 +23,31 @@
                     <option value="8">Octal</option>
                     <option value="16">Hexadecimal</option>
                 </select>
-                <input type="text" id="numero" placeholder="Número a convetir">
-                <div id="mensajeError"></div> <!--Div para mostrar el error de validación-->
-                <button type="submit">Convertir</button>
-                <label for="resultado">Resultado</label>
-                <label for="resDecimal">Decimal</label>
-                <input type="text" id="resDecimal" readonly>
-                <label for="resBinario">Binario</label>
-                <input type="text" id="resBinario" readonly>
-                <label for="resOctal">Octal</label>
-                <input type="text" id="resOctal" readonly>
-                <label for="resHexadecimal">Hexadecimal</label>
-                <input type="text" id="resHexadecimal" readonly>
 
+                <label for="numero">Inserta la cantidad a convertir:</label>
+                <input type="text" id="numero" placeholder="Número a convertir" />
+
+                <div id="mensajeError"></div>
+
+                <button type="submit" class="btn">Convertir</button>
+
+                <div class="results">
+                    <label for="resDecimal">Decimal</label>
+                    <input type="text" id="resDecimal" readonly />
+
+                    <label for="resBinario">Binario</label>
+                    <input type="text" id="resBinario" readonly />
+
+                    <label for="resHexadecimal">Hexadecimal</label>
+                    <input type="text" id="resHexadecimal" readonly />
+
+                    <label for="resOctal">Octal</label>
+                    <input type="text" id="resOctal" readonly />
+                </div>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer class="footer"><a href="https://github.com/emman2602/Covertidor-Numeros" target="_blank">Developed by Ale Dul</a></footer>
     <script type="module" src="./js/main.js"></script>
 </body>
-
 </html>

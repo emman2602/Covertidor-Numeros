@@ -1,10 +1,18 @@
 
 export const isDecimal = (number) => {
-    let regex = /^[0-9]+$/;
+    const regex = /^[0-9]+$/;
     return regex.test(number);
 }
 export const isBinary = (number) => {
-    let regex = /^[01]+$/;
+    const regex = /^[01]+$/;
+    return regex.test(number);
+}
+export const isOctal = (number) => {
+    const regex = /^[0-7]+$/;
+    return regex.test(number);
+}
+export const isHexadecimal = (number) => {
+    const regex = /^[0-9A-Fa-f]+$/;
     return regex.test(number);
 }
 
