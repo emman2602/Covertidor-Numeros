@@ -82,4 +82,4 @@ form.addEventListener('submit', (event) => {
 
 inputNumber.addEventListener("input", () => {
   if (divError.textContent) clearError();
-});¿
+});
